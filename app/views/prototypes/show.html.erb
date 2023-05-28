@@ -46,7 +46,7 @@
         <%# // ログインしているユーザーには上記を表示する %>
         <ul class="comments_lists">
           <%# 投稿に紐づくコメントを一覧する処理を記述する %>
-          <% @comments.each do |comment| %>
+          <% @prototype.comments.each do |comment| %>
             <li class="comments_list">
               <%= comment.content %>
               <%= link_to comment.user.name, user_path(comment.user), class: :comment_user %>
